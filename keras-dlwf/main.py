@@ -15,7 +15,9 @@ from data import load_data, split_dataset, DataGenerator
 import tor_lstm
 import tor_sdae
 import tor_cnn
+
 import h5py
+import tensorflow as tf
 
 from keras.backend.tensorflow_backend import set_session
 config = tf.ConfigProto()
