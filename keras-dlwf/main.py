@@ -21,7 +21,7 @@ from keras.backend.tensorflow_backend import set_session
 config = tf.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 0.25
 set_session(tf.Session(config=config))
-print '[Test][Warining] Restrict GPU memory usage to 25%'
+print('[Test][Warining] Restrict GPU memory usage to 25%')
 
 torconf = "tor.conf"
 config = ConfigObj(torconf)
