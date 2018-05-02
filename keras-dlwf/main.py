@@ -17,6 +17,12 @@ import tor_sdae
 import tor_cnn
 import h5py
 
+from keras.backend.tensorflow_backend import set_session
+config = tf.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.25
+set_session(tf.Session(config=config))
+print '[Test][Warining] Restrict GPU memory usage to 25%'
+
 torconf = "tor.conf"
 config = ConfigObj(torconf)
 logfile = config['log']
@@ -299,7 +305,7 @@ def eval_main():
             log_results(id, "res_open{}_{}_{}".format(nb_instances, id, dnn), predicted, 200, dnn=dnn, resdir="results_" + dnn)
 
 
-def main(save=False, wtime=False):
+def main(save=True, wtime=False):
     id = gen_id()
     print("IN MAIN")
     datapath = config['datapath']
@@ -517,11 +523,11 @@ def main(save=False, wtime=False):
 
     if save:
         # serialize model to JSON
-        model_json = best_model.to_json()
-        with open("models/{}_{}.json".format(id, dnn), "w") as json_file:
-            json_file.write(model_json)
+        #model_json = best_model.to_json()
+        #with open("models/{}_{}.json".format(id, dnn), "w") as json_file:
+        #    json_file.write(model_json)
         # serialize weights to HDF5
-        best_model.save_weights("models/{}_{}.h5".format(id, dnn))
+        best_model.save_weights("models/cnn_1_{}_{}.h5".format(id, dnn))
         print("Saved model {}_{} to disk".format(id, dnn))
 
         # clean up

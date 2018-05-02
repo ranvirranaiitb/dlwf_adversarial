@@ -14,3 +14,8 @@ ID0105_162459 01.05 16:25:19>	Loaded data 249996 instances for 101 classes: 2475
 ID0105_162459 01.05 16:25:19>	Experiment 1: seed 18
 ID0105_162605 01.05 16:26:21>	Loaded data 249983 instances for 100 classes: 2499 traces per class, 5000 Tor cells per trace
 ID0105_162605 01.05 16:26:21>	Experiment 1: seed 18
+ID0205_071326 02.05 07:13:49>	Loaded data 249983 instances for 100 classes: 2499 traces per class, 5000 Tor cells per trace
+ID0205_071326 02.05 07:13:49>	Experiment 1: seed 18
+ID0205_071422 02.05 07:14:40>	Loaded data 249983 instances for 100 classes: 2499 traces per class, 5000 Tor cells per trace
+ID0205_071422 02.05 07:14:40>	Experiment 1: seed 18
+ID0205_071422 02.05 08:04:21>	Training took 2980.35 sec
