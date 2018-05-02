@@ -19,3 +19,9 @@ ID0205_071326 02.05 07:13:49>	Experiment 1: seed 18
 ID0205_071422 02.05 07:14:40>	Loaded data 249983 instances for 100 classes: 2499 traces per class, 5000 Tor cells per trace
 ID0205_071422 02.05 07:14:40>	Experiment 1: seed 18
 ID0205_071422 02.05 08:04:21>	Training took 2980.35 sec
+ID0205_082028 02.05 08:20:50>	Loaded data 249983 instances for 100 classes: 2499 traces per class, 5000 Tor cells per trace
+ID0205_082028 02.05 08:20:50>	Experiment 1: seed 18
+ID0205_082028 02.05 09:10:17>	Training took 2965.99 sec
+ID0205_082028 02.05 10:14:14>	Test loss(entropy):	4.9325
+ID0205_082028 02.05 10:14:14>	Test accuracy:	0.0103
+ID0205_082028 02.05 10:14:14>	Test took 3836.44 sec

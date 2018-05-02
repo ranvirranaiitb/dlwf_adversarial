@@ -5,6 +5,9 @@ import statistics
 from datetime import datetime
 import numpy as np
 import math
+
+import tensorflow as tf
+
 from configobj import ConfigObj
 from keras.utils import np_utils
 import keras.preprocessing.sequence as sq
@@ -17,13 +20,15 @@ import tor_sdae
 import tor_cnn
 
 import h5py
-import tensorflow as tf
+
+
 
 from keras.backend.tensorflow_backend import set_session
 config = tf.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 0.25
 set_session(tf.Session(config=config))
 print('[Test][Warining] Restrict GPU memory usage to 25%')
+
 
 torconf = "tor.conf"
 config = ConfigObj(torconf)
